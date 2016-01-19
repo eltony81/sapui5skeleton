@@ -1,0 +1,22 @@
+{
+  "name": "sapui5skeleton",
+  "version": "0.1.0",
+  "description": "sapui5skeleton",
+  "main": "index.html",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eltony81/sapui5skeleton.git"
+  },
+  "author": "Antonio Di Fluri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eltony81/sapui5skeleton/issues"
+  },
+  "homepage": "https://github.com/eltony81/sapui5skeleton#readme"
+}
