@@ -1,7 +1,7 @@
 sap.ui.define( ["sap/ui/core/mvc/Controller"], function (Controller) {
 	"use strict";
 
-	return Controller.extend("tmpproject.controller.App", {
+	return Controller.extend("sapui5skeleton.controller.App", {
 		/*onInit : function () {
 			var sUrl = "#" + this.getOwnerComponent().getRouter().getURL("page2");
 			this.byId("link").setHref(sUrl);

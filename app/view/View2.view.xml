@@ -1,7 +1,7 @@
 <View
 	xmlns="sap.m"
 	xmlns:layout="sap.ui.layout"
-	controllerName="tmpproject.controller.View2">
+	controllerName="sapui5skeleton.controller.View2">
 	<Page
 		title="Second Page"
 		showNavButton="true"

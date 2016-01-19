@@ -1,7 +1,7 @@
 {  
-   "_version":"0.0.1",
+   "_version":"1.1.0",
    "sap.app":{  
-      "id":"sap.fiori.appName",
+      "id":"sapui5skeleton",
       "type":"application",
       "i18n":"locales/locale.properties",
       "applicationVersion":{  
@@ -9,7 +9,8 @@
       },
       "offline":true
    },
-   "sap.ui":{  
+   "sap.ui":{
+      "_version":"1.1.0",   
       "technology":"UI5",
       "deviceTypes":{  
          "desktop":true,
@@ -21,12 +22,30 @@
          "sap_bluecrystal"
       ]
    },
-   "sap.ui5":{  
-      "rootView":"tmpproject.view.App",
+   "sap.ui5":{
+      "_version":"1.1.0",
+      "resources":{
+            "css": [{
+                "uri": "css/style.css",
+                "id": "customstyle"
+            }]
+      },
+      "dependencies": {
+            "minUI5Version": "1.30.0",
+            "libs": {
+                "sap.m": {
+                    "minVersion": "1.32.0"
+                },
+                "sap.ui.commons": {
+                    "minVersion": "1.32.0"
+                }
+            }
+      },	  
+      "rootView":"sapui5skeleton.view.App",
       "routing":{  
          "config":{  
             "routerClass":"sap.m.routing.Router",
-            "viewPath":"tmpproject.view",
+            "viewPath":"sapui5skeleton.view",
             "controlId":"rootControl",
             "controlAggregation":"pages",
             "viewType":"XML"
