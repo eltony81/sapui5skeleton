@@ -16,9 +16,19 @@ sap.ui.define( ["sap/ui/core/mvc/Controller"], function (Controller) {
 		
 		getLocale : function(){
 			var sCurrentLocale = sap.ui.getCore().getConfiguration().getLanguage();
+			console.log ( 'currentLocale = ' + sCurrentLocale);
 			var oBundle = jQuery.sap.resources({url : "locales/locale.properties", locale: sCurrentLocale});
 			var oModel = this.getView().getModel();
 			oModel.setData({'locale': sCurrentLocale, 'mylabel': oBundle.getText("WELCOME_INFO")}, true);
+		},
+		
+		getForcedLocale : function(){
+			var oModel = this.getView().getModel();
+			var forcedLocale = oModel.getProperty('/locale');
+			console.log ( 'forcedLocale = ' + forcedLocale);
+			var oBundle = jQuery.sap.resources({url : "locales/locale.properties", locale: forcedLocale});
+			var oModel = this.getView().getModel();
+			oModel.setData({'locale': forcedLocale, 'mylabel': oBundle.getText("WELCOME_INFO")}, true);
 		}
 	});
 

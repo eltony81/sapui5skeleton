@@ -8,7 +8,11 @@
 			<layout:VerticalLayout>
 				<Button text="To the second Page" press="onToPage2"/>
 				<Link id="link" text="A link to the second Page"/>
+				<layout:HorizontalLayout>
 				<Button text="My locale" press="getLocale"/>
+				<Button text="Force locale" press="getForcedLocale"/>
+				</layout:HorizontalLayout>
+				<Input value="{/locale}" valueLiveUpdate="true" width="200px" />
 				<Label id="localeLabel" text="{/locale}" class="sapUiSmallMarginBottom" design="Bold" />
 				<Label id="localeLabelTest" text="{/mylabel}" class="sapUiSmallMarginBottom" />
 			</layout:VerticalLayout>
