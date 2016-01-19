@@ -1,5 +1,5 @@
 {  
-   "_version":"0.0.1",
+   "_version":"1.1.0",
    "sap.app":{  
       "id":"sapui5skeleton",
       "type":"application",
@@ -9,7 +9,8 @@
       },
       "offline":true
    },
-   "sap.ui":{  
+   "sap.ui":{
+      "_version":"1.1.0",   
       "technology":"UI5",
       "deviceTypes":{  
          "desktop":true,
@@ -22,12 +23,24 @@
       ]
    },
    "sap.ui5":{
+      "_version":"1.1.0",
       "resources":{
             "css": [{
                 "uri": "css/style.css",
                 "id": "customstyle"
             }]
-      },   
+      },
+      "dependencies": {
+            "minUI5Version": "1.30.0",
+            "libs": {
+                "sap.m": {
+                    "minVersion": "1.32.0"
+                },
+                "sap.ui.commons": {
+                    "minVersion": "1.32.0"
+                }
+            }
+      },	  
       "rootView":"sapui5skeleton.view.App",
       "routing":{  
          "config":{  
