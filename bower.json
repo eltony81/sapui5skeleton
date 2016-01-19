@@ -1,0 +1,23 @@
+{
+  "name": "sapui5skeleton",
+  "description": "sapui5skeleton",
+  "main": "index.html",
+  "authors": [
+    "Antonio Di Fluri"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/eltony81/sapui5skeleton",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "openui5-sap.ui.core": "openui5/packaged-sap.ui.core#~1.32.9",
+    "openui5-sap.m": "openui5/packaged-sap.m#~1.32.9",
+    "openui5-themelib_sap_bluecrystal": "openui5/packaged-themelib_sap_bluecrystal#~1.32.9"
+  }
+}
