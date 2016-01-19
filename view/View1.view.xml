@@ -1,0 +1,17 @@
+<View
+	xmlns="sap.m"
+	xmlns:layout="sap.ui.layout"
+	controllerName="tmpproject.controller.View1">
+	<Page
+		title="First Page">
+		<content>
+			<layout:VerticalLayout>
+				<Button text="To the second Page" press="onToPage2"/>
+				<Link id="link" text="A link to the second Page"/>
+				<Button text="My locale" press="getLocale"/>
+				<Label id="localeLabel" text="{/locale}" class="sapUiSmallMarginBottom" design="Bold" />
+				<Label id="localeLabelTest" text="{/mylabel}" class="sapUiSmallMarginBottom" />
+			</layout:VerticalLayout>
+		</content>
+	</Page>
+</View>

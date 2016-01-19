@@ -1,0 +1,5 @@
+<View xmlns="sap.m"
+	xmlns:layout="sap.ui.layout"
+	controllerName="tmpproject.controller.App">
+	<App id="rootControl"/>
+</View>
