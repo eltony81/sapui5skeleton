@@ -1,35 +1,32 @@
 <!DOCTYPE HTML>
 <html>
-
 <head>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta charset="UTF-8" />
-	<title>Targets used standalone</title>
-	<script id="sap-ui-bootstrap" type="text/javascript"
-			src="resources/sap-ui-core.js"
-			data-sap-ui-theme='sap_bluecrystal'
-			data-sap-ui-libs='sap.m'
-			data-sap-ui-bindingSyntax='complex'
-			data-sap-ui-resourceroots='{
-                                       "sapui5skeleton": "./",
-                                       "sapui5skeleton.view": "./view",
-                                       "sapui5skeleton.controller": "./controller",
-                                       "sapui5skeleton.routingApp": "./"
-                                       }'>
-	</script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
 
+    <script src="resources/sap-ui-core.js" id="sap-ui-bootstrap"
+            data-sap-ui-libs="sap.m,sap.ui.commons,sap.ui.table,sap.ui.layout"
+            data-sap-ui-theme="sap_bluecrystal"
+            data-sap-ui-bindingSyntax="complex" data-sap-ui-compatVersion="edge"
+            data-sap-ui-resourceroots='{"myapp": "./"}'>
+    </script>
 
+    <!-- ext lib -->
+    <script src="ext_lib/sprintf.min.js"></script>
 
-	<script>
-		sap.ui.getCore().attachInit(function() {
-			new sap.ui.core.ComponentContainer({
-				height : "100%",
-				name : "sapui5skeleton.routingApp"
-			}).placeAt("content");
-		});
-	</script>
+    <script>
+        sap.ui.getCore().attachInit(function () {
+            new sap.ui.core.ComponentContainer({
+                height: "100%",
+                name: "myapp"
+            }).placeAt("content");
+        });
+    </script>
 
 </head>
-<body id="content" style="margin: 0" class="sapUiBody">
+
+<body class="sapUiBody" role="application">
+<div id="content"/>
 </body>
+
 </html>

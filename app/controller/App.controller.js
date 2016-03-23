@@ -1,18 +1,16 @@
-sap.ui.define( ["sap/ui/core/mvc/Controller"], function (Controller) {
-	"use strict";
+sap.ui.define(['sap/ui/core/mvc/Controller'], function (Controller) {
+    "use strict";
 
-	return Controller.extend("sapui5skeleton.controller.App", {
-		/*onInit : function () {
-			var sUrl = "#" + this.getOwnerComponent().getRouter().getURL("page2");
-			this.byId("link").setHref(sUrl);
-            this.getView().setModel(new sap.ui.model.json.JSONModel("model/coffee.json"));
-		},
+    return Controller.extend("myapp.controller.App", {
 
-		onToPage2 : function () {
-			this.getOwnerComponent().getRouter().navTo("page2");
-		}*/
-        
-       
-	});
+        onInit: function () {
+
+            jQuery.sap.log.debug("APP starting!!!");
+
+
+        }
+
+
+    });
 
 }, /* bExport= */ true);
