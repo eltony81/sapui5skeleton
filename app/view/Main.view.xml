@@ -1,0 +1,15 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:c="sap.ui.commons" xmlns="sap.m"
+          xmlns:l="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:t="sap.ui.table"
+          controllerName="myapp.controller.Main">
+    <Page title="{locale>myapp.view.main.title}">
+        <headerContent>
+            <Button icon="sap-icon://log" press="onAddPress" text="Uscita"
+                    ariaLabelledBy="exitButtonLabel" class="sapUiSmallMarginEnd"/>
+        </headerContent>
+        <content>
+
+            <Button text="{locale>myapp.goto.tmp}" press="onToTmpPage" class="sapUiSmallMarginEnd"/>
+
+        </content>
+    </Page>
+</mvc:View>

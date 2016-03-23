@@ -1,14 +1,18 @@
 /* Custom Styles  */
-#ui5Logo {
-    padding-left: 10px;
+.condList .sapMLIB {
+    border-bottom: 0px !important;
 }
-#myproLink {
-    color: #ffffff;
+
+.noteForm .sapUiFormResGridCont {
+    padding-bottom: 0px;
 }
-#myproLinkLP {
-    color: #ffffff;
+
+.noteForm .sapUiRrPtb {
+    border-width: 0px;
 }
-.welcomeText {
-	font-size: 1.0rem;
-	margin: 2rem;
+
+.notModifiableValue input{
+    color: red !important;
 }
+
+

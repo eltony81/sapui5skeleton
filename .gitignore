@@ -9,3 +9,11 @@ node_modules
 .project
 /dist
 /bower_components
+.settings
+.classpath
+.destination.properties
+.project
+WebContent/.idea/
+WebContent/zppm_kanban/.idea/
+node_modules/
+WebContent/
