@@ -1,4 +1,4 @@
-# MyApp VA UI5 #
+# MyApp Skeleton UI5 #
 
 How to compile:
 
