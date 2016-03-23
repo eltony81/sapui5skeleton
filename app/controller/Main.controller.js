@@ -11,6 +11,8 @@ sap.ui.define([
 
         onInit: function () {
 
+            var params = jQuery.sap.getUriParameters(window.location.href);
+            console.log(params);
 
         },
 
@@ -19,7 +21,7 @@ sap.ui.define([
 
         },
 
-        onToTmpPage: function(event){
+        onToTmpPage: function (event) {
 
             this.getOwnerComponent().getRouter().navTo("tmp");
 
