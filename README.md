@@ -10,8 +10,8 @@ How to compile:
     - npm update
     - bower update
 
-- finnally compile 
-    - grunt compile
+- finnally compile and run
+    - npm run-script run
 
-- compile, build and launch server (nodejs)
-    - grunt
+- show the result:
+    - open browser to: http://localhost:9876/
