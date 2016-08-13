@@ -16,9 +16,9 @@
   "author": "Antonio Di Fluri",
   "license": "ISC",
   "bugs": {
-    "url": https://github.com/eltony81/sapui5skeleton/issues"
+    "url": "https://github.com/eltony81/sapui5skeleton/issues"
   },
-  "homepage": https://github.com/eltony81/sapui5skeleton/issues#readme",
+  "homepage": "https://github.com/eltony81/sapui5skeleton/issues#readme",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-cli": "^1.2.0",
