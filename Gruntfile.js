@@ -6,7 +6,7 @@
         grunt.initConfig({
 
             ui5: {
-                version: '1.34.9'
+                version: '1.38.5'
             },
 
             dir: {
