@@ -29,5 +29,6 @@
     "grunt-eslint": "^17.3.1",
     "grunt-openui5": "^0.8.0",
 	"grunt-string-replace": "^1.2.1"
-  }
+  },
+  "scripts": { "compile": "grunt compile", "run": "grunt" }
 }
