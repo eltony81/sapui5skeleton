@@ -84,8 +84,6 @@
     "comma-spacing": 0,
     "no-multi-spaces": 0,
     "no-shadow": 0,
-    "no-irregular-whitespace": 0,
-    "space-after-keywords": "off",
-    "keyword-spacing": [2, {"before": true, "after": true}]
+    "no-irregular-whitespace": 0
   }
 }
