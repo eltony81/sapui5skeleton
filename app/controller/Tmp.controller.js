@@ -4,22 +4,22 @@ sap.ui.define([
     './MyUtils',
     'sap/ui/core/routing/History',
     'sap/ui/core/mvc/Controller'
-], function (jQuery, MessageToast, MyUtils, History, Controller) {
+], function(jQuery, MessageToast, MyUtils, History, Controller) {
     "use strict";
 
     var TmpController = Controller.extend("myapp.controller.Tmp", {
 
 
-        onInit: function () {
+        onInit: function() {
 
         },
 
-        onAfterRendering: function () {
+        onAfterRendering: function() {
 
 
         },
 
-        onNavBack: function () {
+        onNavBack: function() {
             var oHistory = History.getInstance();
             var sPreviousHash = oHistory.getPreviousHash();
 

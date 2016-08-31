@@ -2,7 +2,7 @@ sap.ui.define([
     'jquery.sap.global',
     'sap/ui/model/resource/ResourceModel',
     'sap/ui/base/Object'
-], function (jQuery, ResourceModel, Object) {
+], function(jQuery, ResourceModel, Object) {
     "use strict";
 
     var ResConfigManager = Object.extend("myapp.utils.ResConfigManager", {
@@ -13,7 +13,7 @@ sap.ui.define([
 
         _sLocale: sap.ui.getCore().getConfiguration().getLanguage(),
 
-        getLocale: function () {
+        getLocale: function() {
 
             if (this._localeResource === null) {
 
@@ -28,7 +28,7 @@ sap.ui.define([
 
         },
 
-        getResourceBundle: function () {
+        getResourceBundle: function() {
 
             if (this._resourceBundle === null) {
 

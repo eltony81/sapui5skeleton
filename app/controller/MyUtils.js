@@ -4,7 +4,7 @@ sap.ui.define([
     'sap/m/MessageBox',
     'sap/m/MessageToast',
     'sap/ui/core/format/DateFormat'
-], function (jQuery, JSONModel, MessageBox, MessageToast, DateFormat) {
+], function(jQuery, JSONModel, MessageBox, MessageToast, DateFormat) {
     "use strict";
 
     var MyUtils = {
