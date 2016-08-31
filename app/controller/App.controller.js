@@ -5,6 +5,7 @@ sap.ui.define(['sap/ui/core/mvc/Controller'], function (Controller) {
 
         onInit: function () {
 
+        	
             jQuery.sap.log.debug("APP starting!!!");
 
 

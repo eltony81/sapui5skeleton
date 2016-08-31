@@ -14,12 +14,21 @@
   "sap.ui": {
     "_version": "1.1.0",
     "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
     "deviceTypes": {
       "desktop": true,
       "tablet": true,
       "phone": false
     },
     "supportedThemes": [
+      "sap_hcb",
       "sap_bluecrystal"
     ]
   },
@@ -32,6 +41,10 @@
           "id": "customstyle"
         }
       ]
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
     },
     "models": {
       "locale": {
@@ -48,6 +61,9 @@
           "minVersion": "1.30.0"
         },
         "sap.ui.commons": {
+          "minVersion": "1.30.0"
+        },
+        "sap.ui.layout": {
           "minVersion": "1.30.0"
         }
       }
