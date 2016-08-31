@@ -1,18 +1,20 @@
 /* Custom Styles  */
-.condList .sapMLIB {
-    border-bottom: 0px !important;
+.condList .sapMLIB
+{
+    border-bottom: 0 !important;
 }
 
-.noteForm .sapUiFormResGridCont {
-    padding-bottom: 0px;
+.noteForm .sapUiFormResGridCont
+{
+    padding-bottom: 0;
 }
 
-.noteForm .sapUiRrPtb {
-    border-width: 0px;
+.noteForm .sapUiRrPtb
+{
+    border-width: 0;
 }
 
-.notModifiableValue input{
+.notModifiableValue input
+{
     color: red !important;
 }
-
-
