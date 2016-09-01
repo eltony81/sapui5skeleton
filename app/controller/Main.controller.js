@@ -1,9 +1,8 @@
 sap.ui.define([
     'jquery.sap.global',
     'sap/m/MessageToast',
-    './MyUtils',
     'sap/ui/core/mvc/Controller'
-], function(jQuery, MessageToast, MyUtils, Controller) {
+], function(jQuery, MessageToast, Controller) {
     "use strict";
 
     var MainController = Controller.extend("myapp.controller.Main", {
