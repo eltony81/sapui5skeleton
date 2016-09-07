@@ -111,9 +111,29 @@
                             dest: '<%= dir.dist %>'
                         }, {
                             expand: true,
-                            cwd: '<%= dir.bower_components %>/accounting.js',
-                            src: 'accounting.min.js',
+                            cwd: '<%= dir.bower_components %>/sprintf/dist',
+                            src: 'sprintf.min.js',
                             dest: '<%= dir.dist %>/ext_lib/'
+                        }]
+                    },
+                    test: {
+                        files: [{
+                            expand: true,
+                            cwd: '<%= dir.webapp %>',
+                            src: [
+                                '**',
+                                '!META-INF/**',
+                                '!WEB-INF/**',
+                                '!.idea/**'
+                            ],
+                            dest: '<%= dir.dist %>'
+                        }, {
+                            expand: true,
+                            cwd: './',
+                            src: [
+                                '.Ui5RepositoryIgnore'
+                            ],
+                            dest: '<%= dir.dist %>'
                         }, {
                             expand: true,
                             cwd: '<%= dir.bower_components %>/sprintf/dist',
@@ -149,8 +169,7 @@
                                 '**',
                                 '!META-INF/**',
                                 '!WEB-INF/**',
-                                '!.idea/**',
-                                '!test/**'
+                                '!.idea/**'
                             ],
                             dest: '<%= dir.dist %>'
                         }],
@@ -205,12 +224,15 @@
             // Build sync
             grunt.registerTask('buildSync', ['compile', 'copySync']);
 
+            // Build test
+            grunt.registerTask('build_test', ['buildSync', 'copy:test']);
+
             // Watch task
             grunt.registerTask('mywatch', ['watch']);
 
             // Default task
             grunt.registerTask('default', [
-                'build',
+                'build_test',
                 'serve:dist',
                 'watch'
             ]);

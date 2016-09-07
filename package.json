@@ -38,6 +38,7 @@
     "compile": "grunt compile",
     "build": "grunt build",
     "run": "grunt",
+	"clean": "grunt clean",
     "dist": "grunt dist"
   }
 }

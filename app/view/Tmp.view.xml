@@ -10,6 +10,8 @@
 
             <Button icon="sap-icon://arrow-left" press="onNavBack" text="{locale>myapp.view.tmp.back}" />
 
+            <Button icon="sap-icon://log" press="onPress" text="push me" />
+
         </content>
     </Page>
 </mvc:View>
