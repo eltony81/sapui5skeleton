@@ -8,4 +8,4 @@ node_js:
     
 # Running npm test to run your test cases
 script:
-    - grunt compile
+    - npm run-script build

@@ -11,16 +11,19 @@
             data-sap-ui-resourceroots='{"myapp": "./"}'>
     </script>
 
-    <!-- ext lib -->
+    <!-- ext lib 
     <script src="ext_lib/sprintf.min.js"></script>
+    -->
 
     <script>
-        sap.ui.getCore().attachInit(function () {
-            new sap.ui.core.ComponentContainer({
-                height: "100%",
-                name: "myapp"
-            }).placeAt("content");
-        });
+        sap.ui.getCore().attachInit(function() {
+                new sap.m.Shell({
+                    app: new sap.ui.core.ComponentContainer({
+                        height : "100%",
+                        name : "myapp"
+                    })
+                }).placeAt("content");
+            });
     </script>
 
 </head>

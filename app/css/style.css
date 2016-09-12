@@ -1,18 +1,5 @@
 /* Custom Styles  */
-.condList .sapMLIB {
-    border-bottom: 0px !important;
+.myButton
+{
+    background-color: red;
 }
-
-.noteForm .sapUiFormResGridCont {
-    padding-bottom: 0px;
-}
-
-.noteForm .sapUiRrPtb {
-    border-width: 0px;
-}
-
-.notModifiableValue input{
-    color: red !important;
-}
-
-

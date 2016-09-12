@@ -1,9 +1,11 @@
-sap.ui.define(['sap/ui/core/mvc/Controller'], function (Controller) {
+sap.ui.define(['sap/ui/core/mvc/Controller', './../utils/OdataManager'], function(Controller, OdataManager) {
     "use strict";
 
     return Controller.extend("myapp.controller.App", {
 
-        onInit: function () {
+        onInit: function() {
+
+            OdataManager.__initialize(this.getOwnerComponent());
 
             jQuery.sap.log.debug("APP starting!!!");
 
