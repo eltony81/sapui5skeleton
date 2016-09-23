@@ -9,8 +9,12 @@ sap.ui.define([
 
     var TmpController = Controller.extend("myapp.controller.Tmp", {
 
+        oDataModel: null,
 
         onInit: function() {
+
+            this.oDataModel = OdataManager.getOdata();
+            this.getView().setModel(this.oDataModel);
 
         },
 
@@ -57,9 +61,8 @@ sap.ui.define([
 
         onPress: function(oEvent) {
 
-            var odata = OdataManager.getOdata();
-            this.getInvoices(odata);
-
+            this.getInvoices(this.oDataModel);
+            
         }
 
     });
