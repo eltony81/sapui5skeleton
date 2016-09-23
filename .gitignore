@@ -17,3 +17,6 @@ WebContent/.idea/
 WebContent/zppm_kanban/.idea/
 node_modules/
 WebContent/
+/nbproject/private/
+project.xml
+project.properties

@@ -1,44 +1,43 @@
 {
-  "name": "ui5skeleton",
-  "version": "0.1.0",
-  "description": "ui5skeleton",
-  "main": "index.html",
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/eltony81/sapui5skeleton"
-  },
-  "author": "Antonio Di Fluri",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/eltony81/sapui5skeleton/issues"
-  },
-  "homepage": "https://github.com/eltony81/sapui5skeleton/issues#readme",
-  "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-cli": "^1.2.0",
-    "grunt-contrib-clean": "^1.0.0",
-    "grunt-contrib-connect": "^1.0.1",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-jshint": "^1.0.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-connect-proxy": "^0.2.0",
-    "grunt-eslint": "^18.1.0",
-    "grunt-jsvalidate": "^0.2.2",
-    "grunt-openui5": "^0.8.1",
-    "grunt-sync": "^0.6.2",
-    "grunt-string-replace": "^1.2.1"
-  },
-  "scripts": {
-    "compile": "grunt compile",
-    "build": "grunt build",
-    "run": "grunt",
-	"clean": "grunt clean",
-    "dist": "grunt dist"
-  }
+    "name": "ui5skeleton",
+    "version": "0.1.0",
+    "description": "ui5skeleton",
+    "main": "index.html",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/eltony81/sapui5skeleton"
+    },
+    "author": "Antonio Di Fluri",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/eltony81/sapui5skeleton/issues"
+    },
+    "homepage": "https://github.com/eltony81/sapui5skeleton/issues#readme",
+    "devDependencies": {
+        "grunt": "^0.4.5",
+        "grunt-cli": "^1.2.0",
+        "grunt-contrib-clean": "^1.0.0",
+        "grunt-contrib-connect": "^1.0.1",
+        "grunt-contrib-copy": "^1.0.0",
+        "grunt-contrib-jshint": "^1.0.0",
+        "grunt-contrib-watch": "^1.0.0",
+        "grunt-eslint": "^18.1.0",
+        "grunt-jsvalidate": "^0.2.2",
+        "grunt-openui5": "^0.8.1",
+        "grunt-sync": "^0.6.2",
+        "grunt-string-replace": "^1.2.1"
+    },
+    "scripts": {
+        "compile": "grunt compile",
+        "build": "grunt build",
+        "run": "grunt",
+        "clean": "grunt clean",
+        "dist": "grunt dist"
+    }
 }
