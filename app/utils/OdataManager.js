@@ -45,7 +45,7 @@ sap.ui.define([
 
             return this._odata;
 
-        },
+        }
 
     });
 

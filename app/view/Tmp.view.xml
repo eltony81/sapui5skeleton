@@ -12,6 +12,25 @@
 
             <Button icon="sap-icon://log" press="onPress" text="push me" />
 
+            <Table items="{/Invoices}">
+                <columns>
+                    <Column width="11rem" hAlign="Center">
+                        <Text text="Invoice name" />                        
+                    </Column>
+                    <Column width="11rem" hAlign="Center">
+                        <Text text="Invoice quantity" />                      
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem>
+                        <cells>
+                            <Label text="{ProductName}" />
+                            <Label text="{Quantity}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+
         </content>
     </Page>
 </mvc:View>
