@@ -7,11 +7,12 @@ How to compile:
     - install bower
 
 - download dependencies:
-    - npm update
+    - npm install
     - bower update
 
-- finnally compile and run
-    - npm run-script run
+- finally compile and run
+    - npm run-script build
+    - npm run-script start
 
 - show the result:
     - open browser to: http://localhost:9876/
