@@ -36,7 +36,7 @@
     "scripts": {
         "compile": "grunt compile",
         "build": "grunt build",
-        "run": "grunt",
+        "start": "grunt",
         "clean": "grunt clean",
         "dist": "grunt dist"
     }
