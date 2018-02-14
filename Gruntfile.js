@@ -216,7 +216,7 @@
 
             // Build task
             //grunt.registerTask('build', ['compile', 'openui5_preload', 'copy:dist', 'string-replace']);
-            grunt.registerTask('build', ['compile', 'openui5_preload', 'copy:dist']);
+            grunt.registerTask('build', ['compile', 'copy:dist']);
 
             // Copy sync mode
             grunt.registerTask('copySync', 'sync');

@@ -1,5 +1,6 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:c="sap.ui.commons" xmlns="sap.m"
           xmlns:l="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:t="sap.ui.table"
+          xmlns:vk="sap.ui.vk"
           controllerName="myapp.controller.Tmp">
     <Page title="{locale>myapp.view.tmp.title}">
         <headerContent>
@@ -7,30 +8,36 @@
                     ariaLabelledBy="exitButtonLabel" class="sapUiSmallMarginEnd"/>
         </headerContent>
         <content>
+            <VBox>
+                <vk:Viewport
+                    id="viewport1"
+                    width="100%"
+                    height="100%" />
+                <HBox>
+                    <Button icon="sap-icon://arrow-left" press="onNavBack" text="{locale>myapp.view.tmp.back}" />
 
-            <Button icon="sap-icon://arrow-left" press="onNavBack" text="{locale>myapp.view.tmp.back}" />
+                    <Button icon="sap-icon://log" press="onPress" text="push me" />
+                </HBox>
 
-            <Button icon="sap-icon://log" press="onPress" text="push me" />
-
-            <Table items="{/Invoices}">
-                <columns>
-                    <Column width="11rem" hAlign="Center">
-                        <Text text="Invoice name" />                        
-                    </Column>
-                    <Column width="11rem" hAlign="Center">
-                        <Text text="Invoice quantity" />                      
-                    </Column>
-                </columns>
-                <items>
-                    <ColumnListItem>
-                        <cells>
-                            <Label text="{ProductName}" />
-                            <Label text="{Quantity}" />
-                        </cells>
-                    </ColumnListItem>
-                </items>
-            </Table>
-
+                <!--<Table items="{/Invoices}">
+                    <columns>
+                        <Column width="11rem" hAlign="Center">
+                            <Text text="Invoice name" />                        
+                        </Column>
+                        <Column width="11rem" hAlign="Center">
+                            <Text text="Invoice quantity" />                      
+                        </Column>
+                    </columns>
+                    <items>
+                        <ColumnListItem>
+                            <cells>
+                                <Label text="{ProductName}" />
+                                <Label text="{Quantity}" />
+                            </cells>
+                        </ColumnListItem>
+                    </items>
+                </Table>-->
+            </VBox>
         </content>
     </Page>
 </mvc:View>
