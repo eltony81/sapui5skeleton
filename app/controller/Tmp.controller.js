@@ -8,6 +8,25 @@ sap.ui.define([
 ], function (jQuery, MessageToast, OdataManager, History, Controller, ContentResource) {
     "use strict";
 
+    var loadModelIntoViewer = function (viewer, remoteUrl, sourceType, localFile) {
+        //what is currently loaded in the view is destroyed
+        viewer.destroyContentResources();
+
+        var source = remoteUrl || localFile;
+
+        if (source) {
+            //content of viewer is replaced with new data
+            var contentResource = new ContentResource({
+                source: source,
+                sourceType: sourceType,
+                sourceId: "abc"
+            });
+
+            //content: chosen path. content added to the view
+            viewer.addContentResource(contentResource);
+        }
+    };
+
     var TmpController = Controller.extend("myapp.controller.Tmp", {
 
         oDataModel: null,
@@ -26,48 +45,11 @@ sap.ui.define([
         },
 
         loadScene: function (event) {
-
-            var mainScene;
-
+            
             var view = this.getView();
-            var viewport = view.byId("viewport1");
-            var graphicsCore = viewport.getGraphicsCore();
+            var viewer = view.byId("viewer1");
+            loadModelIntoViewer(viewer, "3d/998 Clutch.vds", "vds");
 
-            if (graphicsCore === undefined || graphicsCore === null) {
-                graphicsCore = new sap.ui.vk.GraphicsCore({}, {
-                    //the drawing buffer will perform antialiasing using its choice of technique (multisample/supersample) and quality
-                    antialias: true,
-                    //the drawing buffer has an alpha channel for the purposes of performing OpenGL destination alpha operations and compositing with the page
-                    alpha: true,
-                    //the page compositor will assume that colors in the drawing buffer are not premultiplied.
-                    premultipliedAlpha: false
-                });
-
-
-                viewport.setGraphicsCore(graphicsCore);
-            }
-
-            var contentResource = new ContentResource({
-                source: "3d/998 Clutch.vds",
-                sourceType: "vds",
-                sourceId: "abc"
-            });
-            graphicsCore.loadContentResourcesAsync([contentResource], function (sourcesFailedToLoad) {
-                if (sourcesFailedToLoad) {
-                    // Creates a new error-level entry in the log with the given message
-                    jQuery.sap.log.error("Some of content resources cannot be loaded.");
-                } else {
-                    //Builds a scene tree from the hierarchy of content resources. The content resources must be already loaded.
-                    var scene = graphicsCore.buildSceneTree([contentResource]);
-                    if (scene) {
-                        mainScene = scene;
-                        //Scene class provides the interface for the 3D model.
-                        viewport.setScene(mainScene);
-                    } else {
-                        jQuery.sap.log.error("Failed to load viewport");
-                    }
-                }
-            });
         },
 
         onNavBack: function () {
